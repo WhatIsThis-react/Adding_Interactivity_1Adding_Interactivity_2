@@ -21,9 +21,9 @@ export default function Counter() {
       )}
       <button
         onClick={() => {
-          setNumber(number + 1);
-          setNumber(number + 1);
-          setNumber(number + 1);
+          setNumber((n) => n + 1);
+          setNumber((n) => n + 1);
+          setNumber((n) => n + 1);
         }}
       >
         +3
