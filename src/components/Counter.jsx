@@ -4,7 +4,11 @@ export default function Counter() {
   // 다음 렌더링 전에 버튼이 작동하면 좋겠어요, 그리고 전 한번에 3 더하지 않고 1씩 3번 더하고 싶어요!!!
   const [number, setNumber] = useState(0);
   // 숫자가 이븐하지 않을 땐 false로 만들어줘요 ;; 이름 좀 이상하면 수정부탁드립니다...
-  const [isEven, setHello] = useState(true);
+  const [isEven, setEven] = useState(true);
+
+  useEffect(() => {
+    setEven(number % 2 === 0);
+  }, [number]);
 
   return (
     <>
