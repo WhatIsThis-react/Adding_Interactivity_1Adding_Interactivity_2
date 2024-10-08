@@ -10,9 +10,9 @@ function App() {
   increment.toString = () => 'n => n+1';
 
   function decrement(n) {
-    return;
+    return n - 3;
   }
-  decrement.toString = () => '';
+  decrement.toString = () => 'n => n-3';
 
   return (
     <div className="App">
